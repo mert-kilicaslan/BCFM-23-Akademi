@@ -3,3 +3,6 @@ Bu komut ile oluşturduğum Dockerfile dosyasını kullanarak Docker Image oluş
 
 docker push mertkilicaslan/bcfm-23-akademi :
 Komutu ile local'de oluşturduğum Docker Image’i Docker Hub’a gönderiyorum.
+
+
+Projeye başlamadan önce docker'a login olduğum için burada "docker login" komutunu çalıştırmama gerek kalmıyor.
