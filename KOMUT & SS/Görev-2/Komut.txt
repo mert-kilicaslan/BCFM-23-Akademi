@@ -23,7 +23,7 @@ COPY . .
 Projedeki tüm dosyaları Docker Image'in çalışma dizinine kopyaladım.
 
 EXPOSE 5000
-Python uygulamamızın portu 5000 olarak belirtildiği için Docker container’ın 5000 portunu açtım.
+Python uygulamamızın portu 5000 olarak belirtildiği için 5000 portunu açtım.
 
 CMD ["python", "app.py"]
 Docker container başlatıldığında çalışacak komutu belirttim. Python kullanarak app.py dosyasını çalıştırmayı sağladım.
@@ -36,7 +36,7 @@ git add . :
 Dockerfile dosyasını Git'e ekliyorum.
 
 git commit -m "Dockerfile"
-'git add' komutuyla eklediğim Dockerfile dosyasını kaydediyorum. -m parametresiyle yapılan değişikliklere "Dockerfile" mesajını ekledim.
+'git add' komutuyla eklediğim Dockerfile dosyasını kaydediyorum. -m parametresiyle yapılan değişikliklere "Dockerfile" mesajını ekliyorum.
 
 git push -u origin main
 Local Git Repository'deki yaptığım değişiklikleri GitHub'daki Repository'nin main branch’ine pushladım (gönderdim.)
