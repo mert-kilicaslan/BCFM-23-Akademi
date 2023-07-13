@@ -1,0 +1,30 @@
+Sayın BESTCLOUDFOR.ME Yetkilisi,
+
+Bu raporu, şirketinizin akademisine katılmak için bana verilen Case Study görevini başarıyla tamamlamak amacıyla hazırladım. Rapor, gerçekleştirdiğim çalışmaları ve elde ettiğim sonuçları özetlemektedir. Ayrıntılı bilgilere, ekteki "KOMUT & SS" isimli klasörden ve GitHub Repository üzerinden erişebilirsiniz.
+
+
+Görev-1: Kodun Git Reposuna Yüklenmesi
+İlk olarak, tarafınızca paylaşılan link aracılığıyla uygulama kodlarını indirdim. Projenin başlangıcında, "app.py" ve "requirements.txt" dosyalarını içeren bir klasör oluşturarak yeni bir Git Repository başlattım. Ardından, Local Git Repository'imi, oluşturduğum GitHub repository ile bağlantılı hale getirdim. Son olarak, Local Git Repository'deki değişiklikleri GitHub'daki Repository'nin main branch’ine gönderdim.
+
+Görev-2: Dockerfile Oluşturulması
+Proje klasöründe bir Dockerfile dosyası oluşturdum ve bu değişiklikleri GitHub repository'sinin main branch'ine yükledim.
+
+Görev-3: Docker Image Oluşturulması ve Docker Image Registry'de Saklanması
+Oluşturduğum Dockerfile dosyasını kullanarak bir Docker Image oluşturdum. Ardından, oluşturduğum Docker Image'i Docker Hub'a yükledim.
+
+Görev-4: Docker Container Çalıştırılması
+Oluşturduğum Image'den bir Docker Container başlattım. Container'ı başlatırken, localhost ve Docker Container arasında bir proxy oluşturdum. Localhost'un 9000 portunu, container’ın 5000 portuna yönlendirdim. 
+
+Son olarak, internet tarayıcısını kullanarak "localhost:9000" adresinden uygulamanın başarılı bir şekilde çalıştığını ve "{"msg":"BC4M"}" çıktısını doğruladım.
+
+
+Yukarıda belirtilen adımları takip ederek, projenin geliştirme sürecini başarıyla tamamladım. Bu süreçte, Git'i kullanarak proje dosyalarını yönettim, Docker ile projeyi paketledim ve başarılı bir şekilde çalıştırdım.
+
+Görevleri gerçekleştirirken kullandığım komutları ve bu komutları hangi amaçla/neden kullandığımı açıklayan bilgilere, GitHub Repository içindeki "KOMUT & SS" adlı klasördeki "Görev-1, Görev-2, Görev-3 ve Görev-4" klasörlerindeki "Komut.txt" dosyalarından ulaşabilirsiniz. Aynı şekilde, Terminal, GitHub Repository, Docker Hub ve Dockerfile'a ait ekran görüntüleri de "KOMUT & SS" adlı klasörün ilgili Görev-* klasörlerinde bulunmaktadır.
+
+GitHub Repository ve Docker Hub linkleri aşağıda belirtilmiştir:
+GitHub Repository: https://github.com/mert-kilicaslan/BCFM-23-Akademi
+Docker Hub: https://hub.docker.com/repository/docker/mertkilicaslan/bcfm-23-akademi (mertkilicaslan/bcfm-23-akademi:latest)
+
+Saygılarımla,
+Mert KILIÇASLAN
