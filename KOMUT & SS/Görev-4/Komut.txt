@@ -1,0 +1,5 @@
+docker image ls -a: 
+Komutu ile local makinede bulunan Docker Imageleri listeliyorum (Image bilgilerini görebilmek için.)
+
+docker run -p 9000:5000 77: 
+Komutu ile oluşturduğum Image’den bir Container ayağa kaldırıyorum. P parametresi ile local makinedeki 9000 numaralı portun Docker konteynerindeki 5000 numaralı porta yönlendiriyorum ve tarayıcıdan 0.0.0.0:9000 / localhost:9000’den uygulamaya erişiyorum.

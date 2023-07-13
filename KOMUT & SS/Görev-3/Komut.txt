@@ -1,0 +1,5 @@
+docker build -t mertkilicaslan/bcfm-23-akademi .: 
+Komutu ile oluşturduğum Dockerfile dosyasını kullanarak Docker Image oluşturuyorum. T parametresi ile image’e tag veriyorum.
+
+docker push mertkilicaslan/bcfm-23-akademi: 
+Komutu ile lokalde oluşturduğum Docker Image’i Docker Hub’a gönderiyorum (pushluyorum)

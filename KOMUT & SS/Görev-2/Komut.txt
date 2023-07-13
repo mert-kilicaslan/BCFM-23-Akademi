@@ -1,0 +1,46 @@
+FROM python:3.9-alpine: 
+Base Image olarak Python:3.9-alpine seçme sebebim hem uygulamanın python ile geliştirilmiş olması (Python’un temel bileşenlerini içermesi) hem de basit bir uygulama olduğundan dolayı image boyutunun olabildiğince küçük tutulmasını istemem.
+
+WORKDIR /app: 
+Çalışma dizinini (working directory) /app olarak ayarladım.
+
+RUN pip install --no-cache-dir virtualenv: 
+Python paket yöneticisi “pip”I kullanarak izole bir sanal ortam oluşturmak için “virtualenv” paketini yükledim. “--no-cache-dir” parametresi ile paketlerin önbelleğe alınmamasını ve hem daha temiz bir kurulum yapılmasını hem de image boyutunu küçültmek için kullandım.
+
+RUN python -m virtualenv venv: 
+Daha izole bir ortam olmasını istediğim için ve Flask framework kullanımı söz konusu olduğundan dolayı pip ile yüklediğim virtualenv aracılığı ile Docker image içinde /app dizininde bir sanal ortam oluşturdum. 
+
+
+ENV PATH=" /app/venv/bin: $PATH": 
+Bu komut ile sanal ortamın dizinini PATH değişkenine ekleyerek, Docker container içindeki Python yürütücüsü ve araçlarının doğru bir şekilde bulunmasını sağlamayı amaçladım. “/app/venv/bin” directory, Docker Image içindeki sanal ortamın içindeki Python yürütücüsü ve diğer araçların bulunduğu directorydir. 
+
+COPY requirements.txt : 
+Komutu ile projenin bağımlılıklarını içeren “requirements.txt” dosyasını Docker Image’in çalışma dizinine (working directory) kopyaladım.
+
+
+RUN pip install --no-cache-dir -r requirements.txt: 
+Docker Image oluşturulurken projenin bağımlılıklarını içeren requirements.txt dosyasındaki paketleri yüklemek için kullandım.  “--no-cache-dir” parametresi ile paketlerin önbelleğe alınmamasını sağladım ve bu şekilde image boyutunu küçültmeyi hedefledim.
+
+
+COPY . .: 
+Projedeki tüm dosyaları Docker Image’in çalışma dizinine (working directory) kopyalamak için kullandım.
+
+EXPOSE 5000: 
+Python uygulamamızın portu 5000 olarak belirtildiği için Docker container’ın 5000 portunu açtım.
+
+CMD ["python", "app-py"]: 
+Bu komut, Docker container başlatıldığında çalışacak komutu gösterir. Python kullanılarak app.py dosyası çalıştırılır.
+
+
+
+
+Dockerfile dosyamı oluşturduktan sonra GitHub Repository’e push etmek için:
+
+git add .: 
+Komutu ile Dockerfile dosyasını ekledim.
+
+git commit -m "Dockerfile": 
+Komutu ile ‘git add’ komutuyla eklemiş olduğum Dockerfile dosyasını kaydettim. M parametresi ile yapılan değişikliğe/eklemeye “Dockerfile” mesajını ekledim.
+
+git push -u origin main: 
+Komutu ile  Local Git Repository’de yapmış olduğum değişiklikleri GitHub’daki repository’nin main branch’ine push ettim.
