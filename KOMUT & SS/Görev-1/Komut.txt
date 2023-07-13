@@ -1,3 +1,7 @@
+Projeye başlamadan önce, 
+ihtiyacım olacağını bildiğim için ilk önce terminalden Docker ve GitHub'a login oluyorum...
+
+
 git init:
 Proje klasöründe yer alan app.py ve requirements.txt dosyalarını içeren klasörü yeni bir Git Repository olarak başlatmak için bu komutu kullandım.
 
