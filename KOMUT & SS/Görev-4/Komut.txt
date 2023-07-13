@@ -2,7 +2,7 @@ docker image ls -a:
 Oluşturduğum Image bilgilerini görebilmek için imageleri listeliyorum. Çıktıdaki “IMAGE ID”yi alıyorum (tek bir image olduğu için sadece ilk 2 numarayı alarak Container’ı ayağa kaldırıyorum.)
 
 docker run -p 9000:5000 77: 
-Oluşturduğum Image’den bir Container başlatıyorum. P parametresi ile local makinedeki 9000 numaralı portu Docker Container'daki 5000 numaralı porta yönlendiriyorum.
+Oluşturduğum Image’den bir Container başlatıyorum. P parametresi ile local makinedeki 9000 numaralı portu Docker Container'daki 5000 numaralı porta yönlendiriyorum (proxy işlemi yapmış oluyorum.)
 “77” oluşturduğumuz image’in “IMAGE ID”ni temsil ediyor ve bu image’den bir container oluşturmak istediğimi belirtiyorum.
 
 
