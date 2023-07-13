@@ -1,14 +1,14 @@
-Git init: 
-app.py ve requirements.txt dosyalarının bulunduğu klasörü, yeni bir Git Repository olarak başlatıyorum.
+git init:
+Proje klasöründe yer alan app.py ve requirements.txt dosyalarını içeren klasörü yeni bir Git Repository olarak başlatmak için bu komutu kullandım.
 
-git remote add origin https://github.com/mert-kilicaslan/BCFM-23-Akademi.git: 
-Komutu ile localimdeki Git Repositoryi bir GitHub’daki remote repositorye (https://github.com/mert-kilicaslan/BCFM-23-Akademi.git) bağlamak/ilişkilendirmek için kullandım.
+git remote add origin https://github.com/mert-kilicaslan/BCFM-23-Akademi.git:
+Bu komutu kullanarak yerel Git Repository'imi, GitHub'daki uzak repository ile ilişkilendirdim. Bu sayede yerelde yaptığım değişiklikleri uzak repository'e gönderebildim.
 
-Git add:
-Bu komut ile app.py ve requirements.txt dosyalarını Git'e ekledim.
+git add:
+Bu komutu kullanarak app.py ve requirements.txt dosyalarını Git'e ekledim.
 
-Git commit: 
-Bu komut ile ‘git add’ komutunda eklemiş olduğum değişiklikleri kaydettim. m parametresi ile beraber yapılan/eklenen değişiklik hakkında ufak bir açıklama ekledim.
+git commit:
+Yaptığım değişiklikleri kaydetmek ve bir açıklama eklemek için bu komutu kullandım. -m parametresiyle birlikte açıklama ekledim, bu sayede değişikliklerin neyi temsil ettiğini belirttim.
 
-git push -u origin main: 
-Komutu ile Local Git Repository’de yapmış olduğum değişiklikleri GitHub’daki repository’nin main branch’ine gönderdim.
+git push -u origin main:
+Bu komutu kullanarak yerel Git Repository'deki değişiklikleri GitHub'daki repository'nin main branch’e gönderdim.
